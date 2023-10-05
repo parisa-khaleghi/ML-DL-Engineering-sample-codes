@@ -9,6 +9,7 @@ def gradient_decent(x, y):
     n = len(x)
 
     # we can choose learning_rate as 0.01 or even 0.000001
+    # find learning_rate that reduce cost in each iteration
     learning_rate = 0.08
     for i in range(iterations):
         y_predicted = m_current * x + b_current
