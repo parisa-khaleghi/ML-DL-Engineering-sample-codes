@@ -16,7 +16,7 @@ def gradient_decent(x, y):
         d_b  = -(2/n) * sum(y - y_predicted)
         m_current = m_current - learning_rate * d_m
         b_current = b_current - learning_rate * d_b
-        print("m {}, b {}, iteration {}".format(m_current, b_current, isinstance))
+        print("m {}, b {}, iteration {}".format(m_current, b_current, i))
         
 
 
