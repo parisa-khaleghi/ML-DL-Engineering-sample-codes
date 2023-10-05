@@ -4,7 +4,7 @@ def gradient_decent(x, y):
     m_current = b_current = 0
     
     # define the number of iterations (steps)
-    iterations = 1000
+    iterations = 10000
 
     n = len(x)
 
