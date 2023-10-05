@@ -12,11 +12,15 @@ def gradient_decent(x, y):
     learning_rate = 0.001 
     for i in range(iterations):
         y_predicted = m_current * x + b_current
+
+        # calculate MSE(cost)
+        # val**2 to square the val
+        cost = (1/n) * sum ([val**2 for val in (y-y_predicted)])
         d_m  = -(2/n) * sum(x * (y - y_predicted))
         d_b  = -(2/n) * sum(y - y_predicted)
         m_current = m_current - learning_rate * d_m
         b_current = b_current - learning_rate * d_b
-        print("m {}, b {}, iteration {}".format(m_current, b_current, i))
+        print("m {}, b {}, cost {}, iteration {}".format(m_current, b_current, cost, i))
         
 
 
